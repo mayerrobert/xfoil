@@ -65,14 +65,14 @@ INSTALLCMD = install -s
 ##--------------------------
 ### GNU gfortran
 #FC = gfortran  
-FC = gfortran -m64  
+FC = gfortran -m64 -fallow-argument-mismatch
 FFLAGS = -O2 -fomit-frame-pointer
 FFLOPT = -O3 -fomit-frame-pointer
 #FFLAGS = -O3
 #FFLOPT = -O3
 # Debug flags (symbols, array bounds)
 #FFLAGS = -g -O0 -C
-PLTOBJ = /usr/local/lib/libPlt_gfortran.a
+PLTOBJ = ../plotlib/libPlt_gfortran.a
 #
 ##--------------------------
 # Ancient compile options

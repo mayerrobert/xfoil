@@ -68,7 +68,7 @@ OBJ3D  = plt_3D.o
 
 ###-------------------------------------------------------------------------
 ### Set compiler, compiler flags, name of output object library
-include ./config.make
+include ./config.make.gfortran
 
 
 ###-------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+# debian 10
+# sudo apt install gfortran
+# sudo apt install liblapack-dev (also installs libblas)
+
+all:
+	$(MAKE) -C plotlib libPlt_gfortran.a
+	$(MAKE) -C bin -f Makefile.gfortran xfoil pplot pxplot
+
+clean:
+	$(MAKE) -C plotlib clean
+	$(MAKE) -C bin -f Makefile.gfortran clean
